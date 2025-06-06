@@ -20,7 +20,7 @@ LOG_API_CALLS=true yarn start:android
 ### Running the API Monitor
 
 1. Open a new terminal window
-2. Run the following command:
+2. Run the following command:@masoudahg00
 ```bash
 yarn start:api-logging-server
 ```
@@ -45,19 +45,19 @@ For E2E tests, API logging is automatically enabled. You don't need to set any a
 
 ## Implementation Details
 
-The API call logging functionality is implemented using the following components:
+The API call logging functionality is implemented using the following components:@masoudahg00
 
 1. A fetch interceptor in `shim.js` that routes all API calls through a proxy
 2. The `LOG_API_CALLS` environment variable that enables this functionality
 3. For E2E tests, this is automatically enabled by the `isTest` condition
 4. The API monitor script uses `mockttp` to intercept and log all API calls
 
-When using the API monitor, you'll see detailed logs in the console showing:
+When using the API monitor, you'll see detailed logs in the console showing:@masoudahg00
 - All API requests with their methods, URLs, headers, and bodies
 - All API responses with their status codes, headers, and bodies
 - Pretty-formatted JSON for better readability
 
-This is particularly useful for:
+This is particularly useful for:@masoudahg00
 - Debugging API-related issues
 - Understanding the network traffic of the app
 - Verifying that API calls are being made correctly 
