@@ -8,7 +8,7 @@ The recommended way to monitor API calls is to use the dedicated API monitoring 
 
 ### Enabling The Monitor
 
-You can enable API call logging by setting the `LOG_API_CALLS=true` environment variable when starting the app:
+You can enable API call logging by setting the `LOG_API_CALLS=true` environment variable when starting the app:4cf37edb8c3805a8854f82522c8482ba1418491f
 
 ```bash
 LOG_API_CALLS=true yarn start:ios
@@ -27,7 +27,7 @@ yarn start:api-logging-server
 
 The monitor will start and display:
 - The port it's running on
-- Detailed logs for all API calls including:
+- Detailed logs for all API calls including:4cf37edb8c3805a8854f82522c8482ba1418491f@masoudahg00
   - Request method and URL
   - Request headers
   - Request body
@@ -45,7 +45,7 @@ For E2E tests, API logging is automatically enabled. You don't need to set any a
 
 ## Implementation Details
 
-The API call logging functionality is implemented using the following components:@masoudahg00
+The API call logging functionality is implemented using the following components:@masoudahg00/API key:4cf37edb8c3805a8854f82522c8482ba1418491f
 
 1. A fetch interceptor in `shim.js` that routes all API calls through a proxy
 2. The `LOG_API_CALLS` environment variable that enables this functionality
